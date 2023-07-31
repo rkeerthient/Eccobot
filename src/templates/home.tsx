@@ -59,10 +59,10 @@ const Home: Template<TemplateRenderProps> = ({
               customCssClasses={{
                 container: "h-[85vh]",
                 messageBubbleCssClasses: {
-                  bubble__user: "!bg-none !bg-gray-200 shadow",
-                  bubble__bot: "!bg-none !bg-[#d9d6d0]",
-                  text__user: " text-black font-semibold",
-                  text__bot: " text-black font-semibold",
+                  bubble__user: "!bg-none !bg-[#eef4ff] !border",
+                  bubble__bot: "!bg-none !bg-[#f9fafb] !border",
+                  text__user: " text-black ",
+                  text__bot: " text-black ",
                 },
               }}
             />

@@ -18,79 +18,57 @@
   @apply bg-sky-700 hover:bg-sky-800;
 }
 
-.accordion__button:before {
-  content: "+";
-  float: right;
-  margin-right: 1em;
-  font-size: 2em;
-  line-height: 0.5em;
-  color: orange;
+.yext-chat-message-bubble__bubble__bot ul {
+  list-style-type: circle;
+  list-style-position: outside;
 }
-.accordion__button[aria-expanded="true"]::before,
-.accordion__button[aria-selected="true"]::before {
-  content: "\2014";
+.yext-chat-message-bubble__bubble__bot ol {
+  list-style-type: decimal;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  padding-left: 1.625em;
 }
 
-.accordion__button,
-.accordion__panel {
-  color: black !important;
+.yext-chat-message-bubble__bubble__bot li {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  padding-left: 0.375em;
 }
 
-.accordion-content {
-  transition: 0.2s ease-out;
+.yext-chat-message-bubble__bubble__bot li p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 
-.accordion__panel {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  line-height: 2;
+a {
+  text-decoration: underline;
+  font-weight: 500;
 }
 
-.slick-prev::before,
-.slick-next::before {
-  color: orange !important;
-  font-size: 2rem !important;
+.yext-chat-message-bubble__bubble__bot table {
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  table-layout: auto;
+  text-align: left;
+  width: 100%;
+}
+.yext-chat-message-bubble__bubble__bot thead {
+  border-bottom-color: #d1d5db;
+  border-bottom-width: 1px;
+}
+.yext-chat-message-bubble__bubble__bot th {
+  @apply mx-auto;
 }
 
-.slick-prev,
-.slick-next {
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 2;
-  top: 40% !important;
+.yext-chat-message-bubble__bubble__bot td {
+  padding: 0.5714286em;
+  padding-left: 0;
+  vertical-align: middle;
+  width: 20%;
+  @apply mx-auto;
 }
-
-.slick-list {
-  width: 80%;
-  margin: 0 auto !important;
-}
-
-.slick-prev {
-  left: 2em;
-}
-
-.slick-next {
-  right: 0;
-}
-.slick-prev {
-  left: 7% !important;
-  z-index: 1;
-}
-.slick-next {
-  right: 7% !important;
-  z-index: 1;
-}
-
-@media only screen and (max-width: 768px) {
-  .slick-prev {
-    left: 0% !important;
-    z-index: 1;
-  }
-  .slick-next {
-    right: 2% !important;
-    z-index: 1;
-  }
-}
-.slick-slider .slick-slide {
-  padding: 0 15px;
+.yext-chat-message-bubble__bubble__bot tr {
+  align-items: center;
 }
