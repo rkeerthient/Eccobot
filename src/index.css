@@ -19,62 +19,41 @@
 }
 
 .yext-chat-message-bubble__bubble__bot ul {
-  list-style-type: circle;
-  list-style-position: outside;
+  @apply list-disc list-outside;
 }
 .yext-chat-message-bubble__bubble__bot ol {
-  list-style-type: decimal;
-  margin-bottom: 1.25em;
-  margin-top: 1.25em;
-  padding-left: 1.625em;
+  @apply list-decimal my-5 pl-7;
 }
 
 .yext-chat-message-bubble__bubble__bot li {
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  padding-left: 0.375em;
+  @apply my-2 pl-2;
 }
 
 .yext-chat-message-bubble__bubble__bot li p {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  @apply my-5;
 }
 
 a {
-  text-decoration: underline;
-  font-weight: 500;
+  @apply underline font-medium;
 }
 
 .yext-chat-message-bubble__bubble__bot table {
-  font-size: 0.875em;
-  line-height: 1.7142857;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  table-layout: auto;
-  text-align: left;
-  width: 100%;
+  @apply text-sm leading-7 mb-8 mt-8 table-auto text-left w-full;
 }
 .yext-chat-message-bubble__bubble__bot thead {
-  border-bottom-color: #d1d5db;
-  border-bottom-width: 1px;
+  @apply border-b border-gray-300;
 }
 .yext-chat-message-bubble__bubble__bot th {
   @apply mx-auto;
 }
 
 .yext-chat-message-bubble__bubble__bot td {
-  padding: 0.5714286em;
-  padding-left: 0;
-  vertical-align: middle;
-  width: 20%;
-  @apply mx-auto;
+  @apply mx-auto p-2 pl-0 align-middle w-1/5;
 }
 .yext-chat-message-bubble__bubble__bot tr {
-  text-align: center;
+  @apply text-center;
 }
 
 .yext-chat-message-bubble__bubble__bot img {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+  @apply w-3/4 mx-auto;
 }
