@@ -70,5 +70,11 @@ a {
   @apply mx-auto;
 }
 .yext-chat-message-bubble__bubble__bot tr {
-  align-items: center;
+  text-align: center;
+}
+
+.yext-chat-message-bubble__bubble__bot img {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
