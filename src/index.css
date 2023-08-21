@@ -55,5 +55,5 @@ a {
 }
 
 .yext-chat-message-bubble__bubble__bot img {
-  @apply w-1/4 mx-auto;
+  @apply w-1/4;
 }
